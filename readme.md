@@ -20,6 +20,8 @@ git add .
  git commit -m 'quelques changements dans read me'
 4)  push
 git push --set-upstream origin nouvelle_branche
+5) créer PR
+6) merge PR
 
 # Step 1 : data processing
 python -m curator
