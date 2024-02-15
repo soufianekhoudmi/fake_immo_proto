@@ -16,6 +16,8 @@ if __name__ == "__main__":
 
     data_train, data_test = train_test_split(
         curated_data_34, test_size=0.33, random_state=42)
+    
+    print(data_train.columns)
 
     # Compute benchmark predictions
     cp_mean_prediction = benchmark.compute_means_per_cp(data_train=data_train)
