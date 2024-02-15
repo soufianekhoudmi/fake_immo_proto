@@ -1,0 +1,7 @@
+env/
+.idea/
+*.pyc
+.DS_Store
+node_modules/
+static/css/output.css
+.env
