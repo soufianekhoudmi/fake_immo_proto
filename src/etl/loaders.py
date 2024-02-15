@@ -10,7 +10,7 @@ import pandas as pd
 
 
 def extract_data(path):
-    return pd.read_csv("data/34.csv")
+    return pd.read_csv(path)
 
 def save_data(data, path):
     data.to_csv(path, index=None)
