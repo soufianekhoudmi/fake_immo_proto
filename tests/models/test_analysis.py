@@ -14,7 +14,8 @@ class TestComputeAbsoluteError(unittest.TestCase):
         predicted_column = 'predicted'
 
         expected_data = pd.DataFrame({
-            'valeur_mc': [100, 150, 200],
+            #'valeur_mc': [100, 150, 200],
+            'valeur_mc': [100, 150, 220],
             'predicted': [110, 140, 210],
             'predicted_error': [0.1, 0.066666667, 0.05]
         })
