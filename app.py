@@ -4,7 +4,7 @@ import pickle
 import dash
 from dash import html, dcc
 from dash.dependencies import Input, Output
-from geopy.geocoders import Nominatim
+from geopy.geocoders import BANFrance
 import certifi
 
 
@@ -17,7 +17,7 @@ app = dash.Dash(__name__)
 
 def get_lat_lon(address):
     ssl_context = ssl.create_default_context(cafile=certifi.where())
-    geolocator = Nominatim(user_agent="geoapiExercises", ssl_context=ssl_context)
+    geolocator = BANFrance(user_agent="geoapiExercises", ssl_context=ssl_context)
     location = geolocator.geocode(address)
     if location:
         return (location.latitude, location.longitude)
